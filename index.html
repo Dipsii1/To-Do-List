@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List By Nadhif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List By Nadhif</h1>
+        <div class="form-container">
+          <input type="text" id="input" class="input" placeholder="Add a new task...">
+          <input id="Date-input" type="date">
+          <input id="Time-input" type="time">
+          <select id="day-Selection">
+            <option value="Senin">Senin</option>
+            <option value="Selasa">Selasa</option>
+            <option value="Rabu">Rabu</option>
+            <option value="Kamis">Kamis</option>
+            <option value="Jumat">Jumat</option>
+            <option value="Sabtu">Sabtu</option>
+            <option value="Minggu">Minggu</option>
+          </select>
+          <button onclick="saveTask()" id="Submit" class="add-btn">Submit</button>
+          <input type="text" id="search-input"placeholder="Search You Task...">
+          <select name="" id="">  
+            <option id="filterTable">Semua</option>
+            <option id="filter-selesai">Selesai</option>
+            <option id="filter-belum-selesai">Belum Selesai</option>
+          </select>
+          <button id="DarkMode">Light Mode</button>
+
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Tasks</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="t-body"></tbody>
+        </table>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

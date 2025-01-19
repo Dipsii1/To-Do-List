@@ -1,0 +1,123 @@
+:root {
+    --color-primary: #ffff;
+    --color-secondary: beige; 
+    --color-tertiary: #28a745; 
+    --btn-hover:#218838;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-secondary);
+}
+
+.container {
+  background-color: var(--color-primary);
+  margin-top: 200px;
+  margin-inline: 130px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 8px 20px rgba(0, 0, 0, 0.1);
+  width:80%;
+}
+
+h1 {
+  text-align: center;
+}
+input, select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background: var(--color-primary);
+}
+
+button {
+  background: var(--color-tertiary);
+  color: var(--color-primary);
+  border: none;
+  padding: 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 15%;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+.done {
+  background-color: #28a745;
+  color: #ffff;
+}
+
+.done button {
+  display: none;  
+}
+
+.dark-mode body {
+  background-color: #218838;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .container {
+    margin-inline: 60px;
+  }
+
+  input, select {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .container {
+    margin-inline: 22px;
+  }
+
+
+  th, td {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  button {
+    padding: 8px 0px;
+    border-radius: 15px;
+  }
+}
+
+
+
