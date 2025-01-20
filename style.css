@@ -3,6 +3,7 @@
     --color-secondary: beige; 
     --color-tertiary: #28a745; 
     --btn-hover:#218838;
+    --dark-mode: #0B192C;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-secondary);
+  color: var(--dark-mode);
 }
 
 .container {
@@ -74,8 +76,9 @@ button:hover {
   display: none;  
 }
 
-.dark-mode body {
-  background-color: #218838;
+
+.dark-mode {
+  background-color: var(--dark-mode);
 }
 
 /* Responsive styles */

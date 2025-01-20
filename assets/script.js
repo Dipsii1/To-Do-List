@@ -172,6 +172,10 @@ function clearInput() {
 }
 
 // ===============================================================
-//  untuk Load Data kita yang ada di localstorage
+//                Light Mode and Dark Mode
 // ================================================================
 
+function DarkMode () {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
