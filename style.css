@@ -67,6 +67,10 @@ button:hover {
   background-color: var(--btn-hover);
 }
 
+#search-input {
+  margin-left:150px;
+}
+
 .done {
   background-color: #28a745;
   color: #ffff;
